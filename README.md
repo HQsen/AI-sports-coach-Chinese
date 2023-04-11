@@ -12,7 +12,7 @@
 
 ##  ## 安装
  1. 克隆该仓库
- ```$ git clone https://github.com/HQsen/AI_Coach_Sports.git```
+ ```$ git clone https://github.com/HQsen/AI-sports-coach-Chinese.git```
  2. 进入项目目录
  ```$ cd AI_Coach_Sports_Chinese```
  3. 安装依赖：
