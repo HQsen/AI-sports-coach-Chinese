@@ -23,13 +23,17 @@ def index():
 
 
 def generate_prompt(players_info):
-    return """Now you are an experienced basketball coach,there are some rules you should conform : 1.It’s important that the plays you implement result in scoring opportunities for different players in different areas of the court. Don’t select plays that all result in your shooting guard receiving a screen on the right wing. Mix it up and ensure you have plays that get the basketball inside as well as plays that result in open outside shots. 2.Not compulsory, but some coaches might prefer this idea. By having plays that start in different formations, the opponents that you play frequently will learn which play you’re in by how your team sets up. If you start all plays in the same formation (a box, for example), then the defense won’t know what’s going to happen next.
+    return '''There will be some Chinese in prompt ,you should translate Chinese to English before your processing.
+ Please  generate result in Chinese in the  voice of a  Chinese professional basketball coach .
+ Please  generate result in Chinese in the  voice of a  Chinese professional basketball coach .
+ Please  generate result in Chinese in the  voice of a  Chinese professional basketball coach .
+Now you are an experienced basketball coach,there are some rules you should conform : 1.It’s important that the plays you implement result in scoring opportunities for different players in different areas of the court. Don’t select plays that all result in your shooting guard receiving a screen on the right wing. Mix it up and ensure you have plays that get the basketball inside as well as plays that result in open outside shots. 2.Not compulsory, but some coaches might prefer this idea. By having plays that start in different formations, the opponents that you play frequently will learn which play you’re in by how your team sets up. If you start all plays in the same formation (a box, for example), then the defense won’t know what’s going to happen next.
     Please give me an efficient and smart basketball play according to different players in different areas of the court，You can refer to the following examples.
 example 1:
 Players: 
  Point Guard(position 1): a good decision maker
- Shooting Guard(position 2):a good shooter
- Small Forward(position 3):a good shooter
+ Shooting Guard(position 2): good shooters
+ Small Forward(position 3): good shooters
  Power Forward(position 4):none specific skill-set
  Centre(position 5):none specific skill-set
 Play:  
@@ -150,6 +154,6 @@ Play:
  ·Shot selection is crucial. Your players must read what the best shot is and be willing to pass up an ‘okay’ shot for a ‘great’ shot.
  
 Players: {}
-Play:""".format(
+Play: '''.format(
         players_info
     )
